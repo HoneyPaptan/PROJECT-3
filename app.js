@@ -1,0 +1,22 @@
+
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=2");
+tl.fromTo(".image img", { x: "100%" }, { x:"0%", duration: 1 }, "-=1");
+tl.fromTo("#utext", { opacity: 0}, { opacity: 1, duration: 1 , stagger: 0.25}, "-=1");
+tl.fromTo(".text h2", { opacity: 0}, { opacity: 1, duration: 1 , stagger : 0.25}, "-=1");
+tl.fromTo("nav", {opacity: 0  } , { opacity : 1, duration: 1}, "-=2")
+tl.to(".bigtext h2", {opacity: 1, duration: 1}, "-=1")
+tl.to(".bigtext p", {opacity: 1, duration: 1}, "-=1")
+tl.fromTo(".imgabout", { x: "100%"} , { x: "0%",  duration: 1}, "-=1");
+tl.fromTo(".card-holder", { x: "-150%"} , { x: "0%",  duration: 1}, "-=1");
+
+tl.fromTo("footer", {opacity: 0  } , { opacity : 1, duration: 1}, "-=1")
+
+
+
+
+
